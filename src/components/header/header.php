@@ -7,16 +7,28 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">My Business</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#">Finance</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <div class="dropdown-center">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Notifications
+            </button>
+            <ul class="dropdown-menu">
+              <?php
+              foreach ($example as $notification) {
+              ?> <li><a class="dropdown-item" href="#"><?php echo "<b>From: </b>" . $notification['person'] . "<b> Message: </b>" . $notification['message']; ?></a></li>
+              <?php
+              }
+              ?>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>

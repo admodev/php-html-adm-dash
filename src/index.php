@@ -2,6 +2,17 @@
 
 $title = "Admin Dashboard";
 
+$example = array(
+  array(
+    'person' => 'rick',
+    'message' => 'hello!'
+  ),
+  array(
+    'person' => 'astley',
+    'message' => 'never give up!'
+  )
+);
+
 ?>
 
 <!doctype html>
