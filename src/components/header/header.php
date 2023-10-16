@@ -7,13 +7,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+          <a class="nav-link" href="business">My Business</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">My Business</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Finance</a>
+          <a class="nav-link" href="finance">Finance</a>
         </li>
         <li class="nav-item">
           <div class="dropdown-center">
@@ -27,6 +24,18 @@
               <?php
               }
               ?>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Profile
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </div>
         </li>
